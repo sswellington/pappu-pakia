@@ -228,7 +228,7 @@
       for (var i = 0; i < count; i++) {
         pappu_clone = Object.create(mit.Pappu);
 
-        pappu_clone.invincible = 0;
+        //pappu_clone.invincible = 0;
 
         this.clones.push(pappu_clone);
       }
@@ -244,8 +244,10 @@
         if (clone.x > mit.W || clone.y < 0 || clone.y > mit.H)
           self.clones.splice(index, 1);
 
-        clone.x += utils.randomNumber(500, 1000);
-        clone.y += utils.randomNumber(-2000, 2000);
+        //clone.x += utils.randomNumber(500, 1000);
+        //clone.y += utils.randomNumber(-2000, 2000);
+        clone.x += utils.randomNumber(5, 10);
+        clone.y += utils.randomNumber(-20, 20);
 
         clone.draw(ctx);
       });
