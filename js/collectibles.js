@@ -151,10 +151,10 @@
       var last = this.collecs[this.collecs.length - 1];
 
       if (last) {
-        pos.x = last.x + utils.randomNumber(200, 500);
+        pos.x = last.x + utils.randomNumber(1000, 1500);
       }
       else {
-        pos.x = utils.randomNumber(100, 200);
+        pos.x = utils.randomNumber(500, 1000);
       }
 
       pos.y = utils.randomNumber(100, mit.H-100);

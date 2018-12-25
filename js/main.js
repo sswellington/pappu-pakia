@@ -126,7 +126,8 @@ mit.main = function() {
     mit.game_started = 0;
 
     mit.Backgrounds.common_bg_speed = 1;
-    mit.Backgrounds.resetAllSpeed();
+    //mit.Backgrounds.resetAllSpeed();
+    mit.Backgrounds.ground_bg_move_speed = 7;
 
     // Reset all accelerations and make
     // pappu stationary
@@ -265,8 +266,9 @@ mit.main = function() {
       e.preventDefault();
     }
 
-    // Space || Enter
-    if (e.keyCode === 32 || e.keyCode === 13) {
+    // Space || Enter - reset game
+    //if (e.keyCode === 32 || e.keyCode === 13) {
+    if (e.keyCode === 32) {
       startGame();
 
       e.preventDefault();

@@ -5,19 +5,19 @@
     // Speeds and Velocities of Backgrounds
     common_bg_speed: 1,
 
-    cloud_bg_move_speed: 0,
+    cloud_bg_move_speed: 2,
     cloud_bg_vx: 0,
 
-    backtree_bg_move_speed: 0,
+    backtree_bg_move_speed: 3,
     backtree_bg_vx: 0,
 
-    fronttree_bg_move_speed: 0,
+    fronttree_bg_move_speed: 5,
     fronttree_bg_vx: 0,
 
-    ground_bg_move_speed: 0,
+    ground_bg_move_speed: 7,
     ground_bg_vx: 0,
 
-    combined_bg_move_speed: 0,
+    combined_bg_move_speed: 3,
     combined_bg_vx: 0,
 
     log_x: 40,
@@ -324,7 +324,8 @@
       ctx.drawImage(this.log_img, this.log_x, this.log_y);
 
       if (mit.game_started) {
-        this.log_x -= this.ground_bg_move_speed * this.common_bg_speed;
+        //this.log_x -= this.ground_bg_move_speed * this.common_bg_speed;
+        this.log_x -= this.grass_bg_move_speed * this.common_bg_speed;
       }
     },
 
